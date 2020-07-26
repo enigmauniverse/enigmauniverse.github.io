@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <title>Enigma team</title>
+</head>
+<body>
+  <header class="main-header container-padded">
+    <h1 class="visually-hidden">Enigma website</h1>
+    <nav class="main-header__navigation main-nav">
+      <ul id="myNav" class="main-nav__list">
+        <li class="main-nav__logo">Logo</li>
+        <li class="main-nav__item"><a class="nav-list__link" href="#team">Наша команда</a></li>
+        <li class="main-nav__item"><a class="nav-list__link" href="#comics">Комикс</a></li>
+        <li class="main-nav__item"><a class="nav-list__link" href="#blog">Статья</a></li>
+        <li class="nav-list__btn"><button class="nav-btn" onclick="myFunc()">Menu</button></li>
+      </ul>
+    </nav>
+    <h2 class="main-header__title">Enigma team представляет</h2>
+  </header>
+  <main class="main-content">
+    <div class="main-content__container main-container">
+      <section id="team" class="main-container__about about-main container-padded">
+        <h2 class="about-main__title">Знакомьтесь с командой</h2>
+        <video class="about-main__video main-video" width="1024" height="768" controls>
+          <source class="main-video__src" src="video/enigma.m4v" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </section>
+      <section id="comics" class="main-container__gallery gallery-main">
+        <h2 class="gallery-main__title">Комикс</h2>
+        <div class="gallery-main__comics main-comics__row">
+          <div class="main-comics__column">
+            <img class="main-comics__item comics__item1" src="img/comics-0.jpg" alt="Comics image number 1">
+          </div>
+          <div class="main-comics__column">
+            <img class="main-comics__item comics__item2" src="img/comics-1.jpg" alt="Comics image number 2">
+            <img class="main-comics__item comics__item3" src="img/comics-2.jpg" alt="Comics image number 3">
+          </div>
+          <div class="main-comics__column">
+            <img class="main-comics__item comics__item4" src="img/comics-3.jpg" alt="Comics image number 4">
+          </div>
+          <div class="main-comics__column">
+            <img class="main-comics__item comics__item5" src="img/comics-4.jpg" alt="Comics image number 5">
+          </div>
+          <div class="main-comics__column">
+            <img class="main-comics__item comics__item6" src="img/comics-5.jpg" alt="Comics image number 6">
+          </div>
+        </div>
+      </section>
+      <section id="blog" class="main-container__blog blog-main container-padded">
+        <h2 class="blog-main__title">Блог</h2>
+        <article class="blog-main__article blog-article">
+          <header class="blog-article__header article-header">
+            <h3 class="article-header__title">Заголовок статьи</h3>
+            <p class="article-header__date"><i>дата</i></p>
+          </header>
+          <main class="blog-article__content">
+            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis corrupti dolore aliquam quia iure architecto, sit voluptas ad soluta aspernatur laboriosam, libero a ex quo, accusamus numquam explicabo fugiat eveniet.</div>
+            <div>Atque temporibus, fugiat doloribus laborum! Saepe nulla itaque aliquid explicabo fuga nemo odio repellendus corporis magnam, pariatur veritatis consequuntur ad voluptas temporibus mollitia deserunt? Dignissimos eaque ullam voluptatum voluptatem aut.</div>
+            <div>Saepe ducimus ratione quibusdam fugit magni ex magnam similique, at praesentium vero amet placeat animi, veritatis inventore dignissimos cum expedita sunt odio non. Iure incidunt accusantium sequi perferendis non explicabo!</div>
+            <div>Sint excepturi cumque aliquid voluptatum beatae error ullam nam a magni cupiditate labore natus, quibusdam ad magnam facere ab! Dolorum totam nesciunt labore, quasi deleniti blanditiis consequatur, nisi obcaecati sed!</div>
+            <div>Similique aperiam, debitis adipisci voluptatem, aliquid alias dolorem ducimus. Reiciendis voluptatum rerum commodi, aspernatur distinctio nam, non nisi iure fugiat totam. Adipisci repudiandae alias at, doloribus quod omnis, maxime nostrum.</div>
+            <div>Optio dolores maiores unde, quo, eaque necessitatibus sequi repellat culpa nihil reiciendis eum tempore! Sint delectus tempora, saepe nesciunt illum sunt ipsa, fugiat. Eum quae vel amet quo, dolore alias!</div>
+            <div>Non laboriosam voluptate ducimus numquam id ipsam in praesentium ad tenetur et at, natus maxime minus ullam consequuntur exercitationem error voluptatibus quod reiciendis dolores cupiditate. Molestias vitae distinctio sint ipsa!</div>
+            <div>Quaerat ut eligendi amet expedita suscipit vitae. Assumenda voluptatibus consequuntur id asperiores. Quia consectetur distinctio laudantium officia enim porro doloribus maxime provident praesentium sed. Commodi accusantium error aperiam in, harum.</div>
+            <div>Nemo facilis itaque expedita assumenda voluptate obcaecati ullam fugiat voluptates quibusdam veniam, illo sit, illum praesentium laudantium non et reprehenderit. Non optio nobis fugiat dolore sunt. Nesciunt natus, vero repellendus.</div>
+            <div>Necessitatibus, temporibus fuga reiciendis sunt sit amet voluptates facilis. Omnis consequatur numquam, quo officia mollitia vero. Velit voluptatum nisi veniam, rem minima blanditiis vitae sequi porro reprehenderit, architecto nulla, fugiat.</div>
+          </main>
+        </article>
+      </section>
+    </div>
+  </main>
+  <footer class="main-footer container-padded">
+    <p class="main-footer__text">Created by enigma team with <span class="love-icon">&hearts;</span></p>
+  </footer>
+   <script>
+    function myFunc() {
+      let el = document.getElementById("myNav");
+      el.classList.toggle('resp');
+    }
+  </script>
+</body>
+</html>
