@@ -12,13 +12,17 @@
     <h1 class="visually-hidden">Enigma website</h1>
     <nav class="main-header__navigation main-nav">
       <ul id="myNav" class="main-nav__list">
-        <li class="main-nav__logo">Logo</li>
         <li class="main-nav__item"><a class="nav-list__link" href="#team">Наша команда</a></li>
         <li class="main-nav__item"><a class="nav-list__link" href="#comics">Комикс</a></li>
         <li class="main-nav__item"><a class="nav-list__link" href="#blog">Статья</a></li>
         <li class="nav-list__btn"><button class="nav-btn" onclick="myFunc()">Menu</button></li>
       </ul>
     </nav>
+    <object class="header__logo" data="img/logo.svg" type="image/svg+xml">
+      <div class="header__logo--fallback">
+        <span class="visually-hidden">Your browser does not support svg</span>
+      </div>
+    </object>
     <h2 class="main-header__title">Enigma team представляет</h2>
   </header>
   <main class="main-content">

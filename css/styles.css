@@ -154,13 +154,13 @@ Main styles
   -o-flex-direction: column;
   flex-direction: column;
   -ms-align-items: center;
-
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   min-height: 690px;
   margin-bottom: 1em;
   color: var(--content-color-contrast);
-  background-image: url('../img/header-bg.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/header-bg.jpg');
   background-color: var(--header-cover-color);
   background-position: 50% 50%;
   -webkit-background-size: cover;
@@ -188,8 +188,28 @@ Main styles
   font-weight: 700;
 }
 
+.header__logo {
+  width: 300px;
+  height: 300px;
+}
+
+.logo-svg__path {
+  /* fill: #280b17; */
+  fill: white;
+}
+
+.logo-svg__text-path {
+  fill: white;
+  /* fill: #280b17; */
+}
+
+.logo-svg:hover .logo-svg__path,
+.logo-svg:hover .logo-svg__text-path
+ {
+  fill: #FEFCD7;
+}
+
 .main-header__title {
-  margin: auto;
   font-family: 'Montserrat', Arial, sans-serif;;
   font-weight: 700;
   font-size: 3em;
