@@ -340,6 +340,11 @@ Main styles
   margin-bottom: 1em;
 }
 
+.blog-article__content > img {
+  width: 100%;
+  margin: 0 auto;
+}
+
 .article-header__date {
   -ms-align-self: flex-start;
   align-self: flex-start;
