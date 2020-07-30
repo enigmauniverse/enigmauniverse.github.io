@@ -332,6 +332,7 @@ Main styles
   -ms-align-items: center;
   align-items: center;
   margin-bottom: 4em;
+  text-transform: none;
 }
 
 .blog-article__header {
